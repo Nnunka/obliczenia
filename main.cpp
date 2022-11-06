@@ -6,22 +6,28 @@ int main()
 {
     int a=0,b=0,x=0;
 
-    cout<<"Ax+B=0"<<endl;
-        cout<<"Apodaj wartosc A ";
-        cin>>a;
+    cout<<"Podaj wartosc A ";
+    cin>>a;
+    cout<<"Podaj wartosc B ";
+    cin>>b;
 
     if (a==0)
     {
-        cout<<"A jest rowne 0!!";
-    }
-
-    else
-    {
-        cout<<"Apodaj wartosc B ";
-            cin>>b;
-    x=(-b)/a;
-        cout<<"Miejscem zerowym jest "<<x;
-    }
+        if(b==0)
+        {
+            cout<<"F.stala";
+        }
+        else
+        {
+            cout<<"brak m.zerowych";
+        }
+        }
+        else
+        {
+            x=(-b)/a;
+            cout<<"Miejscem zerowym jest "<<x;
+        }
+cout<<endl;
 
     return 0;
 }
